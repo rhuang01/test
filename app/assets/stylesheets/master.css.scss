@@ -1,0 +1,34 @@
+/*transparent background for home */
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates);
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+
+body {
+	background: url('background-large.png');
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.frost-layer-home{
+    box-shadow: 2px -2px 2px 2px rgba(36,32,33,0.50);
+    background-color: black;
+    padding: 1%;
+}
+
+.thin-header {
+	font-family: 'Varela Round', Helvetica, sans-serif;
+	font-weight: 100;
+	font-size: 64px;
+	text-transform:uppercase;
+	color: white;
+
+}
+
+.main-body {
+	font-family: monospace;
+	font-weight: 200; 
+	font-size: 32px;
+	color: grey;
+}
