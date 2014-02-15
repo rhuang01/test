@@ -1,0 +1,16 @@
+
+
+	<!--#<%= @pics.inspect %>-->
+	<% @pics.each do |pic| %>
+
+<div class="frost-layer-home span6 main-body">
+		<h1>Title:  <%= pic.title %> </h1>
+		<br />
+		<h2> Message: <%= pic.message %> </h2>
+		<br />
+		Who:  <%= pic.who %>
+		<br />
+</div>
+
+	<% end %>
+
