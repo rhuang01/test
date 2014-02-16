@@ -1,9 +1,15 @@
 
-<div class="frost-layer-home">
+<div class="frost-layer-home text-center">
+	<h1 class="thin-header">
+		Share your image
+	</h1>
+
+	<div class="label text-center">
 	<%= simple_form_for @pic do |f| %>
-		<%= f.input :title %>
-		<%= f.input :message %>
-		<%= f.input :who %>
-		<%= f.submit "Save" %>
+		<%= f.input :title, label: 'Enter your title' %>
+		<%= f.input :message, label: 'Enter your message' %>
+		<%= f.input :who, label: 'Who are you', placeholder: 'someone' %>
+		<%= f.submit "Save" , :class=> "btn btn-primary"%>
 	<% end %>
+	</div>
 </div>
