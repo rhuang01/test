@@ -3,14 +3,16 @@
 	<!--#<%= @pics.inspect %>-->
 	<% @pics.each do |pic| %>
 
-<div class="frost-layer-home span6 main-body">
-		<h1>Title:  <%= pic.title %> </h1>
+<div class="frost-layer-home text-center">
+		<h1 class="thin-header"> <%= pic.title %> </h1>
 		<br />
-		<h2> Message: <%= pic.message %> </h2>
+		<h2 class="main-body"> <%= pic.message %> </h2>
 		<br />
-		Who:  <%= pic.who %>
+		<h2 class="main-body"> by:  <%= pic.who %> </h2>
 		<br />
-</div>
+		<%= image_tag pic.image %>
 
+</div>
+<br />
 	<% end %>
 

@@ -9,6 +9,8 @@
 		<%= f.input :title, label: 'Enter your title' %>
 		<%= f.input :message, label: 'Enter your message' %>
 		<%= f.input :who, label: 'Who are you', placeholder: 'someone' %>
+		<%= f.input :image, as: 'file' %>
+		<br />
 		<%= f.submit "Save" , :class=> "btn btn-primary"%>
 	<% end %>
 	</div>
